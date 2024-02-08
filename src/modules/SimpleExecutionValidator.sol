@@ -32,7 +32,7 @@ contract SimpleExecutionValidator is IValidator {
     function getModuleTypes() external view returns (EncodedModuleTypes) { }
 
     function validateUserOp(
-        PackedUserOperation calldata userOp,
+        UserOperation calldata userOp,
         bytes32 userOpHash
     )
         external

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.21;
 
 import { CallType, ExecType, ModeCode } from "../lib/ModeLib.sol";
-import { PackedUserOperation } from "account-abstraction/interfaces/IAccount.sol";
+import { UserOperation } from "account-abstraction/interfaces/IAccount.sol";
 
 struct Execution {
     address target;
@@ -50,9 +50,9 @@ interface IERC7579Account {
      * @dev Ensure adequate authorization control: i.e. onlyEntryPointOrSelf
      *      The implementation of the function is OPTIONAL
      *
-     * @param userOp PackedUserOperation struct (see ERC-4337 v0.7+)
+     * @param userOp UserOperation struct (see ERC-4337 v0.6)
      */
-    function executeUserOp(PackedUserOperation calldata userOp) external payable;
+    function executeUserOp(UserOperation calldata userOp) external payable;
 
     /**
      * @dev ERC-4337 validateUserOp according to ERC-4337 v0.7
@@ -61,10 +61,10 @@ interface IERC7579Account {
      * and call it.
      *
      * @dev MSA MUST implement this function signature.
-     * @param userOp PackedUserOperation struct (see ERC-4337 v0.7+)
+     * @param userOp UserOperation struct (see ERC-4337 v0.7+)
      */
     function validateUserOp(
-        PackedUserOperation calldata userOp,
+        UserOperation calldata userOp,
         bytes32 userOpHash,
         uint256 missingAccountFunds
     )

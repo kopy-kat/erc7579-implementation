@@ -14,7 +14,8 @@
     "@openzeppelin/contracts": "5.0.1"
   },
   "devDependencies": {
-    "account-abstraction": "github:eth-infinitism/account-abstraction#v0.6.0",
+    "account-abstraction": "github:kopy-kat/account-abstraction#develop",
+    "account-abstraction-v0.6": "github:eth-infinitism/account-abstraction#v0.6.0",
     "ds-test": "github:dapphub/ds-test",
     "forge-std": "github:foundry-rs/forge-std",
     "prettier": "^2.8.8",

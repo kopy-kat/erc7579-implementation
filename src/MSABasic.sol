@@ -4,7 +4,7 @@ pragma solidity ^0.8.23;
 import "./lib/ModeLib.sol";
 import { ExecutionLib } from "./lib/ExecutionLib.sol";
 import { ExecutionHelper } from "./core/ExecutionHelper.sol";
-import { UserOperation } from "account-abstraction/interfaces/UserOperation.sol";
+import { UserOperation } from "account-abstraction-v0.6/interfaces/UserOperation.sol";
 import { IERC7579Account } from "./interfaces/IERC7579Account.sol";
 import { IMSA } from "./interfaces/IMSA.sol";
 import "./interfaces/IERC7579Module.sol";

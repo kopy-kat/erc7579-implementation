@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
 
-import { UserOperation } from "account-abstraction/interfaces/UserOperation.sol";
+import { UserOperation } from "account-abstraction-v0.6/interfaces/UserOperation.sol";
 import { EncodedModuleTypes } from "../lib/ModuleTypeLib.sol";
 
 uint256 constant VALIDATION_SUCCESS = 0;

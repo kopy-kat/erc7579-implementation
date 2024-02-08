@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
 
-import { IEntryPoint } from "account-abstraction/interfaces/IEntryPoint.sol";
+import { IEntryPoint } from "account-abstraction-v0.6/interfaces/IEntryPoint.sol";
 import "forge-std/Vm.sol";
 
 address constant ENTRYPOINT_ADDR = 0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789;

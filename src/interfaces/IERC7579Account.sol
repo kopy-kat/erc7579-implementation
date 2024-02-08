@@ -2,7 +2,7 @@
 pragma solidity ^0.8.21;
 
 import { CallType, ExecType, ModeCode } from "../lib/ModeLib.sol";
-import { UserOperation } from "account-abstraction/interfaces/IAccount.sol";
+import { UserOperation } from "account-abstraction-v0.6/interfaces/IAccount.sol";
 
 struct Execution {
     address target;

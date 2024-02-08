@@ -11,6 +11,9 @@ dependencies:
 
 devDependencies:
   account-abstraction:
+    specifier: github:kopy-kat/account-abstraction#develop
+    version: github.com/kopy-kat/account-abstraction/aafae2a1f974e4c05f7025b3303d0d4aba85fa76(ethers@5.7.2)(hardhat@2.19.5)(lodash@4.17.21)(typechain@5.2.0)
+  account-abstraction-v0.6:
     specifier: github:eth-infinitism/account-abstraction#v0.6.0
     version: github.com/eth-infinitism/account-abstraction/7174d6d845618dbd11cee68eefa715f5263690b6(ethers@5.7.2)(hardhat@2.19.5)(lodash@4.17.21)(typechain@5.2.0)
   ds-test:
@@ -770,7 +773,6 @@ packages:
 
   /@openzeppelin/contracts@5.0.1:
     resolution: {integrity: sha512-yQJaT5HDp9hYOOp4jTYxMsR02gdFZFXhewX5HW9Jo4fsqSVqqyIO/xTHdWDaKX5a3pv1txmf076Lziz+sO7L1w==}
-    dev: false
 
   /@pnpm/config.env-replace@1.1.0:
     resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
@@ -4070,6 +4072,36 @@ packages:
     resolution: {tarball: https://codeload.github.com/foundry-rs/forge-std/tar.gz/17c554b7dd5cc3a63e7fb9db035718e619ee7653}
     name: forge-std
     version: 1.7.6
+    dev: true
+
+  github.com/kopy-kat/account-abstraction/aafae2a1f974e4c05f7025b3303d0d4aba85fa76(ethers@5.7.2)(hardhat@2.19.5)(lodash@4.17.21)(typechain@5.2.0):
+    resolution: {tarball: https://codeload.github.com/kopy-kat/account-abstraction/tar.gz/aafae2a1f974e4c05f7025b3303d0d4aba85fa76}
+    id: github.com/kopy-kat/account-abstraction/aafae2a1f974e4c05f7025b3303d0d4aba85fa76
+    name: accountabstraction
+    version: 0.6.0
+    dependencies:
+      '@nomiclabs/hardhat-etherscan': 2.1.8(hardhat@2.19.5)
+      '@openzeppelin/contracts': 5.0.1
+      '@thehubbleproject/bls': 0.5.1
+      '@typechain/hardhat': 2.3.1(hardhat@2.19.5)(lodash@4.17.21)(typechain@5.2.0)
+      '@types/mocha': 9.1.1
+      ethereumjs-util: 7.1.5
+      ethereumjs-wallet: 1.0.2
+      hardhat-deploy: 0.11.45
+      hardhat-deploy-ethers: 0.3.0-beta.13(ethers@5.7.2)(hardhat@2.19.5)
+      solidity-coverage: 0.8.6(hardhat@2.19.5)
+      source-map-support: 0.5.21
+      table: 6.8.1
+      typescript: 4.9.5
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - ethers
+      - hardhat
+      - lodash
+      - supports-color
+      - typechain
+      - utf-8-validate
     dev: true
 
   github.com/vectorized/solady/9deb9ed36a27261a8745db5b7cd7f4cdc3b1cd4e:
